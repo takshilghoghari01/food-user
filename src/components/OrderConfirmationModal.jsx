@@ -16,8 +16,8 @@ const OrderConfirmationModal = ({
   const [showConfirm, setShowConfirm] = useState(false);
   const [showRating, setShowRating] = useState(false);
   const [selectedRating, setSelectedRating] = useState(0);
-  const [orderId, setOrderId] = useState(initialOrderId);
-  const [orderItems, setOrderItems] = useState(initialOrderItems);
+  const [orderId] = useState(initialOrderId);
+  // const [orderItems] = useState(initialOrderItems);
 
   const validateTableNumber = (value) => {
     if (value.trim() === "") {
